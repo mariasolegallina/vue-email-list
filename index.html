@@ -10,7 +10,9 @@
 <body>
     <div id="app">
         <h4>Email list</h4>
-        <p> {{ email }} </p>
+        <ul>
+            <li v-for="(email, index) in arrayEmails">{{email}}</li>
+        </ul>
     </div>
     <script src="./js/app.js"></script>
 </body>
